@@ -1,0 +1,84 @@
+[
+  {
+    "id": "1",
+    "username": "admin",
+    "password": "admin",
+    "role": "admin"
+  },
+  {
+    "id": "2",
+    "username": "security",
+    "password": "security",
+    "role": "security"
+  },
+  {
+    "id": "3",
+    "username": "tenant1",
+    "password": "tenant1",
+    "role": "tenant",
+    "email": "tenant1@email.com",
+    "phone": "111222333",
+    "address": "Greenwood Apartments, Block A",
+    "name": "Alice Johnson",
+    "unit_number": "Apt 3C",
+    "family_members": [
+      {
+        "first_name": "Robert",
+        "last_name": "Johnson",
+        "relationship": "Spouse"
+      },
+      {
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "relationship": "Child"
+      }
+    ],
+    "vehicles": [
+      {
+        "vehicle_number": "JKL8901",
+        "vehicle_type": "Car",
+        "vehicle_name": "Tesla Model 3"
+      },
+      {
+        "vehicle_number": "PQR2345",
+        "vehicle_type": "Bike",
+        "vehicle_name": "Ducati Monster"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "username": "tenant2",
+    "password": "tenant2",
+    "role": "tenant",
+    "email": "tenant2@email.com",
+    "phone": "444555666",
+    "address": "Sunshine Villas, Block B",
+    "name": "David Smith",
+    "unit_number": "Apt 4D",
+    "family_members": [
+      {
+        "first_name": "Laura",
+        "last_name": "Smith",
+        "relationship": "Spouse"
+      },
+      {
+        "first_name": "Chris",
+        "last_name": "Smith",
+        "relationship": "Child"
+      }
+    ],
+    "vehicles": [
+      {
+        "vehicle_number": "XYZ9876",
+        "vehicle_type": "Car",
+        "vehicle_name": "Honda Civic"
+      },
+      {
+        "vehicle_number": "LMN6543",
+        "vehicle_type": "Bike",
+        "vehicle_name": "Kawasaki Ninja"
+      }
+    ]
+  }
+]

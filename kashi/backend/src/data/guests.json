@@ -1,0 +1,23 @@
+[
+  {
+    "tenantId": "3",
+    "name": "John Doe",
+    "vehicleType": "Car",
+    "vehicleNumber": "ABC123",
+    "day": "2025-02-27"
+  },
+  {
+    "tenantId": "3",
+    "name": "John Doe",
+    "vehicleType": "Car",
+    "vehicleNumber": "ABC1235",
+    "day": "2025-02-27"
+  },
+  {
+    "tenantId": "3",
+    "name": "Dennies Issac",
+    "vehicleType": "Car",
+    "vehicleNumber": "KLO8 653",
+    "day": "2025-03-01"
+  }
+]
