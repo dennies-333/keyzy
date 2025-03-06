@@ -3,8 +3,9 @@ import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:security/utils/custom_colors.dart';
 import 'security_details_page.dart';
-
+import 'package:security/views/security/add_visitor_page.dart';
 import 'package:security/controllers/security_controller.dart';
+import 'package:security/controllers/auth_controller.dart';
 
 class SecurityPage extends StatefulWidget {
   const SecurityPage({super.key});
@@ -14,11 +15,13 @@ class SecurityPage extends StatefulWidget {
 
 class _SecurityPageState extends State<SecurityPage> {
   final SecurityController controller = Get.put(SecurityController());
+  final AuthController authController = Get.put(AuthController());
   int _currentIndex = 0;
   final PageController _pageController = PageController();
 
   final List<Widget> _pages = [
   SecurityDetailView(),
+  RegisterVisitor(),  
   ];
 
   void _onItemTapped(int index) {
@@ -41,7 +44,7 @@ class _SecurityPageState extends State<SecurityPage> {
           // Watermark logo
           Center(
             child: Opacity(
-              opacity: 0.1,
+              opacity: 1,
               child: Image.asset(
                 'lib/assets/images/logo-blue.png',
                 width: 250,

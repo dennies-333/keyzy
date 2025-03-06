@@ -46,7 +46,7 @@ class _MainPageState extends State<MainPage> {
           // Watermark logo
           Center(
             child: Opacity(
-              opacity: 0.1,
+              opacity: 1,
               child: Image.asset(
                 'lib/assets/images/logo-blue.png',
                 width: 250,

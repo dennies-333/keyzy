@@ -32,34 +32,38 @@ const saveVisitors = (visitorData) => {
 
 // POST: Add a visitor
 exports.addVisitor = (req, res) => {
-    const { tenantId, name, relationship } = req.body;
-  
-    if (!tenantId || !name || !relationship) {
-      return res.status(400).json({ message: 'All fields (tenantId, name, relationship) are required.' });
-    }
-  
-    const newVisitor = {
-      visitorId: uuidv4(),
-      tenantId,
-      name,
-      relationship,
-      timestamp: getCurrentTimestamp(),
-    };
-  
-    try {
-      let visitors = getVisitors();
-      visitors.push(newVisitor);
-      saveVisitors(visitors);
-  
-      res.status(201).json({
-        message: 'Visitor added successfully',
-        visitor: newVisitor,
-      });
-    } catch (error) {
-      console.error('Error adding visitor:', error.message);
-      res.status(500).json({ message: 'Internal server error' });
-    }
+  const { tenantId, name, relationship, purpose } = req.body;
+
+  // Check if all required fields are provided
+  if (!tenantId || !name || !relationship || !purpose) {
+    return res.status(400).json({ message: 'All fields (tenantId, name, relationship, purpose) are required.' });
+  }
+
+  // Create a new visitor object
+  const newVisitor = {
+    visitorId: uuidv4(),
+    tenantId,
+    name,
+    relationship,
+    purpose,
+    timestamp: getCurrentTimestamp(),
   };
+
+  try {
+    let visitors = getVisitors();
+    visitors.push(newVisitor);
+    saveVisitors(visitors);
+
+    res.status(201).json({
+      message: 'Visitor added successfully',
+      visitor: newVisitor,
+    });
+  } catch (error) {
+    console.error('Error adding visitor:', error.message);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+};
+
   
   // DELETE: Remove a visitor by visitorId
   exports.deleteVisitor = (req, res) => {

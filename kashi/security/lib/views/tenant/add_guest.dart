@@ -183,39 +183,6 @@ class AddGuest extends StatelessWidget {
   }
 
   // Custom Card Widget
-  Widget _buildCard({required IconData icon, required String title, required List<Widget> children}) {
-    return Card(
-      elevation: 5,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
-      color: CustomColors.accentColor,
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Icon(icon, color: CustomColors.iconColor),
-                const SizedBox(width: 10),
-                Text(
-                  title,
-                  style: TextStyle(
-                    fontFamily: "Satoshi",
-                    fontSize: 18,
-                    fontWeight: FontWeight.w600,
-                    color: CustomColors.iconColor,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 15),
-            ...children,
-          ],
-        ),
-      ),
-    );
-  }
 
   // Input Field Widget
   Widget _buildInputField({

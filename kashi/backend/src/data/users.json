@@ -84,5 +84,106 @@
         "vehicle_name": "Kawasaki Ninja"
       }
     ]
-  }
+  },
+    {
+    "id": "3",
+    "username": "tenant1",
+    "password": "tenant1",
+    "role": "tenant",
+    "email": "tenant1@email.com",
+    "phone": "111222333",
+    "address": "Greenwood Apartments, Block A",
+    "name": "Alice Johnson",
+    "unit_number": "Apt 3C",
+    "family_members": 
+    [
+    {"first_name": "Robert", "last_name": "Johnson", "relationship": "Spouse"},
+    {"first_name": "Emily", "last_name": "Johnson", "relationship": "Child"}
+    ],
+    "vehicles": 
+    [
+    {"vehicle_number": "JKL8901", "vehicle_type": "Car", "vehicle_name": "Tesla Model 3"},
+    {"vehicle_number": "PQR2345", "vehicle_type": "Bike", "vehicle_name": "Ducati Monster"}
+    ]
+    },
+    {
+    "id": "4",
+    "username": "tenant2",
+    "password": "tenant2",
+    "role": "tenant",
+    "email": "tenant2@email.com",
+    "phone": "444555666",
+    "address": "Sunshine Villas, Block B",
+    "name": "David Smith",
+    "unit_number": "Apt 4D",
+    "family_members": 
+    [
+    {"first_name": "Laura", "last_name": "Smith", "relationship": "Spouse"},
+    {"first_name": "Chris", "last_name": "Smith", "relationship": "Child"}
+    ],
+    "vehicles": 
+    [
+    {"vehicle_number": "XYZ9876", "vehicle_type": "Car", "vehicle_name": "Honda Civic"},
+    {"vehicle_number": "LMN6543", "vehicle_type": "Bike", "vehicle_name": "Kawasaki Ninja"}
+    ]
+    },
+    {
+    "id": "5",
+    "username": "tenant3",
+    "password": "tenant3",
+    "role": "tenant",
+    "email": "tenant3@email.com",
+    "phone": "777888999",
+    "address": "Rosewood Apartments, Block C",
+    "name": "Michael Lee",
+    "unit_number": "Apt 5B",
+    "family_members": 
+    [
+    {"first_name": "Sarah", "last_name": "Lee", "relationship": "Spouse"}
+    ],
+    "vehicles": 
+    [
+    {"vehicle_number": "ABC1234", "vehicle_type": "Car", "vehicle_name": "Toyota Corolla"}
+    ]
+    },
+    {
+    "id": "6",
+    "username": "tenant4",
+    "password": "tenant4",
+    "role": "tenant",
+    "email": "tenant4@email.com",
+    "phone": "333222111",
+    "address": "Lakeview Residences, Block D",
+    "name": "Jessica Brown",
+    "unit_number": "Apt 6A",
+    "family_members": 
+    [
+    {"first_name": "Tom", "last_name": "Brown", "relationship": "Spouse"},
+    {"first_name": "Anna", "last_name": "Brown", "relationship": "Child"}
+    ],
+    "vehicles": 
+    [
+    {"vehicle_number": "DEF5678", "vehicle_type": "Car", "vehicle_name": "Ford Focus"}
+    ]
+    },
+    {
+    "id": "7",
+    "username": "tenant5",
+    "password": "tenant5",
+    "role": "tenant",
+    "email": "tenant5@email.com",
+    "phone": "555666777",
+    "address": "Maple Grove, Block E",
+    "name": "Chris Evans",
+    "unit_number": "Apt 7F",
+    "family_members": 
+    [
+    {"first_name": "Natalie", "last_name": "Evans", "relationship": "Spouse"}
+    ],
+    "vehicles": 
+    [
+    {"vehicle_number": "GHI9012", "vehicle_type": "Car", "vehicle_name": "Chevrolet Malibu"},
+    {"vehicle_number": "RST4567", "vehicle_type": "Bike", "vehicle_name": "Yamaha YZF"}
+    ]
+    }
 ]

@@ -4,13 +4,14 @@ import 'package:get/get.dart';
 
 class HttpService {
 
-   static const String baseUrl = 'http://192.168.1.38:5000/api'; 
-   static String get signInEndpoint => '$baseUrl/auth/signin';
-   static String get getDetailsEndpoint => '$baseUrl/auth/users';
-   static String get addGuestEndpoint => '$baseUrl/guest/addGuest';
-   static String get getVisitorEndpoint => '$baseUrl/visitors/getVisitors';
-   static String get deleteVisitorEndpoint => '$baseUrl/visitors/deleteVisitor';
-    static String get getTenantsEndpoint => '$baseUrl/tenant/getTenants';
+  static const String baseUrl = 'http://192.168.1.38:5000/api'; 
+  static String get signInEndpoint => '$baseUrl/auth/signin';
+  static String get getDetailsEndpoint => '$baseUrl/auth/users';
+  static String get addGuestEndpoint => '$baseUrl/guest/addGuest';
+  static String get getVisitorEndpoint => '$baseUrl/visitors/getVisitors';
+  static String get deleteVisitorEndpoint => '$baseUrl/visitors/deleteVisitor';
+  static String get getTenantsEndpoint => '$baseUrl/tenant/getTenants';
+  static String get addVisitorsEndpoint => '$baseUrl/visitors/addVisitor';
 
 
   // Function to handle GET requests
