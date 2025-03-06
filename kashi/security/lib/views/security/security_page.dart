@@ -3,24 +3,22 @@ import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:security/utils/custom_colors.dart';
 import 'security_details_page.dart';
-import 'package:security/views/tenant/add_guest.dart';
-import 'package:security/views/tenant/visitors_page.dart';
-import 'package:security/controllers/tenant_controller.dart';
+
+import 'package:security/controllers/security_controller.dart';
 
 class SecurityPage extends StatefulWidget {
   const SecurityPage({super.key});
-
   @override
   State<SecurityPage> createState() => _SecurityPageState();
 }
 
 class _SecurityPageState extends State<SecurityPage> {
-  final TenantController controller = Get.put(TenantController());
+  final SecurityController controller = Get.put(SecurityController());
   int _currentIndex = 0;
   final PageController _pageController = PageController();
 
   final List<Widget> _pages = [
-    const SecurityDetailView(),
+  SecurityDetailView(),
   ];
 
   void _onItemTapped(int index) {
@@ -91,8 +89,8 @@ class _SecurityPageState extends State<SecurityPage> {
             tabs: [
               // User Profile tab
               const GButton(
-                icon: Icons.person_rounded,
-                text: 'Profile',
+                icon: Icons.security,
+                text: 'Control',
               ),
 
               // Add Guest tab
@@ -105,41 +103,41 @@ class _SecurityPageState extends State<SecurityPage> {
               GButton(
                 icon: Icons.person_add,
                 text: 'Notifications',
-                leading: Obx(() {
-                  final guestCount = controller.visitors.length;
-                  if (guestCount == 0) return const Icon(Icons.person_add);
+                // leading: Obx(() {
+                //   final guestCount = controller.visitors.length;
+                //   if (guestCount == 0) return const Icon(Icons.person_add);
 
-                  return Stack(
-                    clipBehavior: Clip.none,
-                    children: [
-                      const Icon(Icons.person_add),
-                      Positioned(
-                        right: -8,
-                        top: -8,
-                        child: Container(
-                          padding: const EdgeInsets.all(4),
-                          decoration: const BoxDecoration(
-                            color: Colors.red,
-                            shape: BoxShape.circle,
-                          ),
-                          constraints: const BoxConstraints(
-                            minWidth: 18,
-                            minHeight: 18,
-                          ),
-                          child: Text(
-                            '$guestCount',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 10,
-                              fontWeight: FontWeight.bold,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                    ],
-                  );
-                }),
+                //   return Stack(
+                //     clipBehavior: Clip.none,
+                //     children: [
+                //       const Icon(Icons.person_add),
+                //       Positioned(
+                //         right: -8,
+                //         top: -8,
+                //         child: Container(
+                //           padding: const EdgeInsets.all(4),
+                //           decoration: const BoxDecoration(
+                //             color: Colors.red,
+                //             shape: BoxShape.circle,
+                //           ),
+                //           constraints: const BoxConstraints(
+                //             minWidth: 18,
+                //             minHeight: 18,
+                //           ),
+                //           child: Text(
+                //             '$guestCount',
+                //             style: const TextStyle(
+                //               color: Colors.white,
+                //               fontSize: 10,
+                //               fontWeight: FontWeight.bold,
+                //             ),
+                //             textAlign: TextAlign.center,
+                //           ),
+                //         ),
+                //       ),
+                //     ],
+                //   );
+                // }),
               ),
             ],
           ),

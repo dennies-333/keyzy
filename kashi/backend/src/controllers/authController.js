@@ -87,8 +87,8 @@ exports.getDetails = (req, res) => {
 
     if (user.role === 'admin' || user.role === 'security') {
       console.log(`Admin/Security details for user with ID '${id}' fetched successfully.`); // Debug log
-      const { id, username, role } = user; // Return only necessary details for admin/security
-      return res.status(200).json({ id, username, role });
+      const { name } = user; // Return only necessary details for admin/security
+      return res.status(200).json({ name });
     }
 
     // If the role is not recognized

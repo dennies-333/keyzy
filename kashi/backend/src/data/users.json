@@ -1,12 +1,16 @@
 [
   {
     "id": "1",
+    "name" : "James Bond",
+    "Email" : "james@gmail.com",
     "username": "admin",
     "password": "admin",
     "role": "admin"
   },
   {
     "id": "2",
+    "name" : "John Wick",
+    "Email" : "john@gmail.com",
     "username": "security",
     "password": "security",
     "role": "security"

@@ -10,6 +10,7 @@ class HttpService {
    static String get addGuestEndpoint => '$baseUrl/guest/addGuest';
    static String get getVisitorEndpoint => '$baseUrl/visitors/getVisitors';
    static String get deleteVisitorEndpoint => '$baseUrl/visitors/deleteVisitor';
+    static String get getTenantsEndpoint => '$baseUrl/tenant/getTenants';
 
 
   // Function to handle GET requests
