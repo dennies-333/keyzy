@@ -3,9 +3,9 @@ import 'package:get/get.dart';
 import 'package:security/services/http_services.dart';
 import 'package:security/services/local_storage_service.dart';
 import 'package:security/utils/snackbar.dart';
-import 'package:security/views/main_page.dart';
+import 'package:security/views/security/security_page.dart';
+import 'package:security/views/tenant/tenant_page.dart';
 import 'package:security/views/admin_view.dart';
-import 'package:security/views/security_view.dart';
 import 'package:security/utils/error_text.dart';
 
 class LoginController extends GetxController {
@@ -49,11 +49,12 @@ class LoginController extends GetxController {
         );
 
         } else if (role == 'tenant') {
-          Get.to(() => MainPage(),
+          Get.off(() => MainPage(),
           transition: Transition.rightToLeft, // You can change this to any transition you like
           duration: Duration(milliseconds: 300), );
         } else {
-          Get.off(() => SecurityPage());
+          Get.log("security");
+          Get.to(() => SecurityPage());
         }
         return true;
       } else {

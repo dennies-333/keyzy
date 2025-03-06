@@ -23,11 +23,11 @@ class AuthController extends GetxController {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
-        backgroundColor: CustomColors.primaryColor, // Using custom background color
+        backgroundColor: CustomColors.background, // Using custom background color
         title: Text(
           'Logout',
           style: TextStyle(
-            color: CustomColors.secondaryColor, // Title text color from custom colors
+            color: CustomColors.iconColor, // Title text color from custom colors
             fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
@@ -35,7 +35,7 @@ class AuthController extends GetxController {
         content: Text(
           'Are you sure you want to log out?',
           style: TextStyle(
-            color: Colors.white, // Text color for content
+            color: CustomColors.textColor, // Text color for content
             fontSize: 16,
           ),
         ),
@@ -43,7 +43,7 @@ class AuthController extends GetxController {
           TextButton(
             onPressed: () => Get.back(result: false), // Close the dialog and return false (cancel logout)
             style: TextButton.styleFrom(
-              foregroundColor: CustomColors.accentColor, // Custom cancel button color
+              foregroundColor: CustomColors.textColor, // Custom cancel button color
             ),
             child: Text(
               'Cancel',

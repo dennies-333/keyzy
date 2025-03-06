@@ -19,5 +19,12 @@
     "vehicleType": "Car",
     "vehicleNumber": "KLO8 653",
     "day": "2025-03-01"
+  },
+  {
+    "tenantId": "3",
+    "name": "dennies",
+    "vehicleType": "bike",
+    "vehicleNumber": "kl071",
+    "day": "2025-03-07"
   }
 ]

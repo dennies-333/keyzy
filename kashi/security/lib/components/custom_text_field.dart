@@ -34,7 +34,11 @@ class CustomTextField extends StatelessWidget {
       style: TextStyle(color: textColor ?? Colors.white),
       decoration: InputDecoration(
         labelText: labelText,
-        labelStyle: TextStyle(color: textColor ?? Colors.white),
+        labelStyle: TextStyle(
+          fontFamily: "Satoshi",
+          color: textColor ?? Colors.white,
+        ),
+
         filled: true,
         fillColor: fillColor ?? CustomColors.white,
         border: OutlineInputBorder(
@@ -58,7 +62,7 @@ class CustomTextField extends StatelessWidget {
             width: 1.5,
           ),
         ),
-        prefixIcon: Icon(icon, color: iconColor ?? CustomColors.secondaryColor),
+        prefixIcon: Icon(icon, color: iconColor ?? CustomColors.iconColor),
         errorText: errorText, // Show error text if provided
       ),
     );

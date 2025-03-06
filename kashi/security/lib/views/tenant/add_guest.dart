@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:security/controllers/tenant_controller.dart';
 import 'package:security/utils/custom_colors.dart';
 import 'package:security/controllers/auth_controller.dart';
@@ -37,7 +37,8 @@ class AddGuest extends StatelessWidget {
                       ),
                       Text(
                         'Add Guest',
-                        style: GoogleFonts.raleway(
+                        style: TextStyle(
+                          fontFamily: "Satoshi",
                           fontSize: 24,
                           fontWeight: FontWeight.w600,
                           color: CustomColors.iconColor,  // Title color
@@ -122,7 +123,7 @@ class AddGuest extends StatelessWidget {
                           child: _buildInputField(
                             controller: tenantController.guestDay,
                             hintText: "Select Date",
-                            icon: Icon(Icons.calendar_today, color: CustomColors.iconColor),
+                           
                           ),
                         ),
                       ),
@@ -154,13 +155,14 @@ class AddGuest extends StatelessWidget {
                           backgroundColor: Colors.white,
                           child: Icon(
                             Icons.check,  // Tick icon
-                            color: CustomColors.accentColor,
+                            color: CustomColors.iconColor,
                           ),
                         ),
                         const SizedBox(width: 10),  // Space between the icon and the text
                         Text(
                           'Complete Registration',
-                          style: GoogleFonts.raleway(
+                          style:TextStyle(
+                            fontFamily: "Satoshi",
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                             color: Colors.white,  // White text color
@@ -198,7 +200,8 @@ class AddGuest extends StatelessWidget {
                 const SizedBox(width: 10),
                 Text(
                   title,
-                  style: GoogleFonts.raleway(
+                  style: TextStyle(
+                    fontFamily: "Satoshi",
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                     color: CustomColors.iconColor,
@@ -229,7 +232,8 @@ class AddGuest extends StatelessWidget {
       if (label != null) 
         Text(
           label,
-          style: GoogleFonts.raleway(
+          style: TextStyle(
+            fontFamily: "Satoshi",
             fontSize: 16,
             fontWeight: FontWeight.w600,
             color: CustomColors.iconColor,
@@ -241,7 +245,8 @@ TextField(
   keyboardType: keyboardType,
   decoration: InputDecoration(
     hintText: hintText,
-    hintStyle: GoogleFonts.raleway(
+    hintStyle:TextStyle(
+      fontFamily: "Satoshi",
       fontSize: 16,
       color: Colors.grey,
     ),
